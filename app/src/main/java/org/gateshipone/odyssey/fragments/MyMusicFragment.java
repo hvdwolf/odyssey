@@ -130,22 +130,16 @@ public class MyMusicFragment extends Fragment implements TabLayout.OnTabSelected
         // setup icons for tabs
         final ColorStateList tabColors = tabLayout.getTabTextColors();
         Resources res = getResources();
-        Drawable drawable = res.getDrawable(R.drawable.ic_recent_actors_24dp, null);
-        if (drawable != null) {
-            Drawable icon = DrawableCompat.wrap(drawable);
-            DrawableCompat.setTintList(icon, tabColors);
+        Drawable icon = res.getDrawable(R.drawable.ic_recent_actors_24dp, null);
+        if (icon != null) {
             tabLayout.addTab(tabLayout.newTab().setIcon(icon));
         }
-        drawable = res.getDrawable(R.drawable.ic_album_24dp, null);
-        if (drawable != null) {
-            Drawable icon = DrawableCompat.wrap(drawable);
-            DrawableCompat.setTintList(icon, tabColors);
+        icon = res.getDrawable(R.drawable.ic_album_24dp, null);
+        if (icon != null) {
             tabLayout.addTab(tabLayout.newTab().setIcon(icon));
         }
-        drawable = res.getDrawable(R.drawable.ic_my_library_music_24dp, null);
-        if (drawable != null) {
-            Drawable icon = DrawableCompat.wrap(drawable);
-            DrawableCompat.setTintList(icon, tabColors);
+        icon = res.getDrawable(R.drawable.ic_my_library_music_24dp, null);
+        if (icon != null) {
             tabLayout.addTab(tabLayout.newTab().setIcon(icon));
         }
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
