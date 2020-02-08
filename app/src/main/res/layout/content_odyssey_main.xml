@@ -32,7 +32,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fitsSystemWindows="true"
-        android:theme="@style/AppTheme.AppBarOverlay"
+        android:theme="?attr/odyssey_appbaroverlay_theme"
         app:expanded="true">
 
         <com.google.android.material.appbar.CollapsingToolbarLayout
